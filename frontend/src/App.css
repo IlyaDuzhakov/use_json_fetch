@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 12px; 
+  border: 2px solid #ccc; 
+  margin-bottom: 12px 
+}
+
+.title {
+  margin: 0 0 8px;
+}
+
+.error {
+  color: crimson;
+  font-weight: 700;
+}
+
+.information {
+  background: #f6f6f6; 
+  padding: 8px;
+}
