@@ -1,8 +1,52 @@
+# use_json_fetch
 
-В этом проекте есть:
+## Project Description
 
-backend - создан сервер на node.js (с использованием express) и описаны возможные пути для  get запросов (/loading, /data, /error)
+This project demonstrates working with HTTP requests using React and a custom hook.
 
-frontend:
-1) Cоздан кастомный хук useJsonFetch, который позволяет обрабатывать запрос: получать информацию, обрабатывать ошибки и контролировать статус загрузки.
-2) Используем useJsonFetch, чтобы посмотреть, как обрабатываются успешные запросы, неуспешные и запросы с длительной загрузкой.
+## Backend
+
+A server was created using Node.js and Express.
+
+Available GET endpoints:
+
+- `/loading` — simulates a long loading request
+- `/data` — returns successful response data
+- `/error` — simulates a request with an error
+
+## Frontend
+
+### Custom Hook: useJsonFetch
+
+A custom React hook `useJsonFetch` was created to handle HTTP requests.
+
+The hook allows:
+
+- fetching data from the server
+- handling loading state
+- handling request errors
+
+## Functionality
+
+The application demonstrates how `useJsonFetch` works with:
+
+- successful requests
+- failed requests
+- delayed loading responses
+
+## Technologies Used
+
+- React
+- Custom Hooks
+- Node.js
+- Express
+- Fetch API
+- REST API
+
+## Deployment
+
+Frontend deployed on Vercel:  
+https://use-json-fetch-frontend-8njtcxy04-ilya-frontend.vercel.app
+
+Backend deployed on Render:  
+https://use-json-fetch-backend-evax.onrender.com
