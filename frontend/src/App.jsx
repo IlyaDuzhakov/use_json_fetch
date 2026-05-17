@@ -1,17 +1,15 @@
 import useJsonFetch from "./useJsonFetch";
 import RequestView from "./component/RequestView";
 
-function App() {
-  const [data, loading, error] = useJsonFetch(
-    "http://localhost:7070/data"
-  );
+const API_URL = "https://use-json-fetch-backend-evax.onrender.com";
 
-  const [errorData, errorLoading, errorError] = useJsonFetch(
-    "http://localhost:7070/error"
-  );
+function App() {
+  const [data, loading, error] = useJsonFetch(`${API_URL}/data`);
+
+  const [errorData, errorLoading, errorError] = useJsonFetch(`${API_URL}/error`);
 
   const [loadingData, loadingLoading, loadingError] = useJsonFetch(
-    "http://localhost:7070/loading"
+    `${API_URL}/loading`
   );
 
   return (
